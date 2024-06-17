@@ -45,6 +45,8 @@ As discussed in the paper, once we identified the top three embeddings for our d
     * Automatic Labelling (Using Sematic Similarity)
 
 * Number of clusters -> [2,3,4,5]
+  
+* To compute the MRR and NDCG scores for various embedding techniques, run the mrr_ndcg_calculation.ipynb notebook.
 
 * For running experiments
     ```python
