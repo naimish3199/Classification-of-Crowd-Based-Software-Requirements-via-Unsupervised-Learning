@@ -29,6 +29,8 @@ This repository contains code for the paper **Classification of Crowd-Based Soft
     ```
 ## Usage
 
+To compute the MRR and NDCG scores for various embedding techniques, run the mrr_ndcg_calculation.ipynb notebook.
+
 As discussed in the paper, once we identified the top three embeddings for our dataset, for further experiments we proceed with the top 3 embeddings
 
 * Embeddings used
@@ -45,8 +47,6 @@ As discussed in the paper, once we identified the top three embeddings for our d
     * Automatic Labelling (Using Sematic Similarity)
 
 * Number of clusters -> [2,3,4,5]
-  
-* To compute the MRR and NDCG scores for various embedding techniques, run the mrr_ndcg_calculation.ipynb notebook.
 
 * For running experiments
     ```python
