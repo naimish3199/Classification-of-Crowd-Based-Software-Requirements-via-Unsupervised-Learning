@@ -6,17 +6,17 @@ This repository contains the source code associated with the paper titled **Clas
 * Ensure that Python 3.8 or higher is installed on your system.
 
 ## Running the Project Locally
-* Clone the repository
+* **Clone the repository**
 
     ```bash
     git clone https://github.com/naimish3199/Classification-of-Crowd-Based-Software-Requirements-via-Unsupervised-Learning.git
     ```
 
-* Navigate to the Project Directory
+* **Navigate to the Project Directory**
      ```bash
     cd <path_to_cloned_repository>
     ```
-* Set Up a Virtual Environment (to avoid any dependencies issues)
+* **Set Up a Virtual Environment (to avoid any dependencies issues)**
   * Install the virtualenv package (if not already installed)
     ```bash
     pip install virtualenv   
@@ -36,32 +36,41 @@ This repository contains the source code associated with the paper titled **Clas
     source myenv/bin/activate
     ```
 
-* Install Required Dependencies
+* **Install Required Dependencies**
     ```bash
     pip install -r requirements.txt
     ```
 ## Usage
+To evaluate the performance of various embedding techniques using Mean Reciprocal Rank (MRR) and Normalized Discounted Cumulative Gain (NDCG) metrics, execute the mrr_ndcg_calculation.ipynb notebook.
 
-To compute the MRR and NDCG scores for various embedding techniques, run the mrr_ndcg_calculation.ipynb notebook.
+As outlined in the paper, after determining the top three performing embeddings on our dataset, subsequent experiments were conducted using these top embeddings.
 
-As discussed in the paper, once we identified the top three embeddings for our dataset, for further experiments we proceed with the top 3 embeddings
+* **Embeddings Utilized**
 
-* Embeddings used
-    * SRoBERTa (https://huggingface.co/sentence-transformers/all-distilroberta-v1)
-    * SBERT (https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2)
-    * Word2Vec (Trained on CrowdRE dataset)
+  The following embedding techniques were employed in the experiments:
+    * **SRoBERTa** (https://huggingface.co/sentence-transformers/all-distilroberta-v1)
+    * **SBERT** (https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2)
+    * **Word2Vec** (Trained on CrowdRE dataset)
 
-* Clustering used
-    * K-means
-    * HAC
+* **Clustering Techniques**
+
+  The clustering methods used in this study include
+    * **K-means**
+    * **Hierarchical Agglomerative Clustering (HAC)**
     
-* Labelling
-    * Manual Labelling (Using BERTopic)
-    * Automatic Labelling (Using Sematic Similarity)
+* **Labelling Methods**
+  
+  Labelling for the clusters was performed through both manual and automatic techniques:
+  * **Manual Labelling**: Performed using **BERTopic**.
+  * **Automatic Labelling**: Based on **Semantic Similarity**.
 
-* Number of clusters -> [2,3,4,5]
+* **Number of clusters**
+  
+  The experiments were conducted with varying cluster numbers i.e. [2, 3, 4, 5].
 
-* For running experiments
+* **Running the Experiments**
+
+  To replicate the experiments, execute the following command
     ```python
     python .\main.py
     ```
