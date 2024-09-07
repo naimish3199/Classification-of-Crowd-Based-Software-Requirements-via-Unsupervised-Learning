@@ -1,30 +1,43 @@
 # Classification of Crowd-Based Software Requirements via Unsupervised Learning
 
-This repository contains code for the paper **Classification of Crowd-Based Software Requirements via Unsupervised Learning**
+This repository contains the source code associated with the paper titled **Classification of Crowd-Based Software Requirements via Unsupervised Learning**. The code facilitates the reproduction of the experiments and results presented in the paper.
 
+## Prerequisites
+* Ensure that Python 3.8 or higher is installed on your system.
 
-## Run Locally
-
+## Running the Project Locally
 * Clone the repository
 
-    ```python
+    ```bash
     git clone https://github.com/naimish3199/Classification-of-Crowd-Based-Software-Requirements-via-Unsupervised-Learning.git
     ```
 
-* Make sure that you are using Python 3.8+ version
-* Go to the project directory
-     ```python
-    cd <path_to_directory_where_repository_is_cloned>
+* Navigate to the Project Directory
+     ```bash
+    cd <path_to_cloned_repository>
     ```
-* Create a new virtual environment to avoid any dependencies issues
-    ```python
-    pip install virtualenv    # Installing virtualenv package
-    virtualenv myenv          # myenv is new environment name
-    .\myenv\Scripts\activate  # activating new environment
+* Set Up a Virtual Environment (to avoid any dependencies issues)
+  * Install the virtualenv package (if not already installed)
+    ```bash
+    pip install virtualenv   
+    ```
+  * Create a new virtual environment
+    ```bash
+    virtualenv myenv       
+    ```
+  * Activate the virtual environment
+    
+    On Windows
+    ```bash
+    .\myenv\Scripts\activate 
+    ```
+    On macOS/Linux
+    ```bash
+    source myenv/bin/activate
+    ```
 
-    ```
-* Installing all libraries required for running codes
-    ```python
+* Install Required Dependencies
+    ```bash
     pip install -r requirements.txt
     ```
 ## Usage
