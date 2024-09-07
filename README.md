@@ -8,7 +8,7 @@ This repository contains code for the paper **Classification of Crowd-Based Soft
 * Clone the repository
 
     ```python
-    git clone https://github.com/anonymous328084/Classification-of-Crowd-Based-Software-Requirements-via-Unsupervised-Learning.git
+    git clone https://github.com/naimish3199/Classification-of-Crowd-Based-Software-Requirements-via-Unsupervised-Learning.git
     ```
 
 * Make sure that you are using Python 3.8+ version
