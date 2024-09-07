@@ -54,7 +54,7 @@ As outlined in the paper, after determining the top three performing embeddings 
 
 * **Clustering Techniques**
 
-  The clustering methods used in this study include
+  The clustering methods used in this study include:
     * **K-means**
     * **Hierarchical Agglomerative Clustering (HAC)**
     
@@ -76,13 +76,14 @@ As outlined in the paper, after determining the top three performing embeddings 
     ```
 ## Example
 
-* For one of the configurations of manual labelling
+* **Configuration 1: Manual Labelling**
 
+  To execute the code for a specific configuration involving manual labelling, use the following command:
 
-    ```python
+    ```bash
     python .\main.py
     ```
-
+    Upon execution, the following prompts will be displayed:
     ```powershell
     Enter 0 for manual labelling and 1 for automatic labelling ->
     Enter 0 or 1: 0
@@ -94,37 +95,40 @@ As outlined in the paper, after determining the top three performing embeddings 
     Enter 1 for Yes and 0 for No: 1
     Enter the number of clusters ->
     Enter any integer value in the range of 2 to 4: 4
-    
-    
+    ```
+    Sample output of clustering:
+    ```bash    
     health+other   energy entertainment safety
-    
     
     cluster0->  home,water,smart,food,time,automatically,temperature,save,know,shower
     cluster1->  home,door,smart,know,house,pet,alert,time,lock,dog
     cluster2->  home,energy,light,room,save,turn,temperature,smart,automatically,house
     cluster3->  music,home,room,tv,voice,smart,house,play,turn,movie
-    
-    
+    ```
+    You will then be prompted to assign labels to the clusters:
+    ```bash
     Enter 0 if cluster is health+other
     Enter 1 if cluster is energy
     Enter 2 if cluster is entertainment
     Enter 3 if cluster is safety
-    
-    
+
     Enter label of each cluster (starting from cluster0) seperated by a space: 0 3 1 2
-    
-    
+    ```
+    The performance metrics (precision, recall, F1-score) for this configuration will be displayed as follows:
+  ```bash
        precision  recall  f1-score
     0      0.627   0.593     0.602
+  ```
 
-* For one of the configurations of automated labelling
+* **Configuration 2: Automated Labelling**
 
+    To execute the code for a specific configuration involving automated labelling, use the following command:
 
-    ```python
+    ```bash
     python .\main.py
     ```
-
-    ```powershell
+    Upon execution, the following prompts will be displayed:
+    ```bash
     Enter 0 for manual labelling and 1 for automatic labelling ->
     Enter 0 or 1: 1
     Enter the type of embeddings to be used ->
@@ -135,8 +139,9 @@ As outlined in the paper, after determining the top three performing embeddings 
     Enter 1 for Yes and 0 for No: 0
     Enter the number of clusters ->
     Enter any integer value in the range of 2 to 5: 2
-    
-    
+    ```
+    The performance metrics (precision, recall, F1-score) for this configuration will be displayed as follows:
+  ```bash  
     health   energy
        precision  recall  f1-score
     0      0.804   0.804     0.803
