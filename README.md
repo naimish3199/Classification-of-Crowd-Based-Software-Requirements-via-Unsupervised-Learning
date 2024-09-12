@@ -183,3 +183,23 @@ As outlined in the paper, after determining the top three performing embeddings 
     0      0.665   0.691     0.623
     ```
 ## Citation
+
+```
+@InProceedings{10.1007/978-3-031-70245-7_17,
+author="Sharma, Naimish
+and Sharma, Arpit",
+editor="Bertolino, Antonia
+and Pascoal Faria, Joao
+and Lago, Patricia
+and Semini, Laura",
+title="Classification of Crowd-Based Software Requirements via Unsupervised Learning",
+booktitle="Quality of Information and Communications Technology",
+year="2024",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="237--252",
+abstract="Crowd-based requirements engineering (CrowdRE) involves large scale user participation in RE related tasks. In order to extract meaningful insights, supervised machine learning techniques (SML) have been used in the literature for the classification of crowd-based software requirements. These techniques involve training ML models which requires a lot of time, computational resources and high quality labeled data which is extremely rare to obtain in the context of CrowdRE. We focus on the problem of classifying crowd-based software requirements using unsupervised ML techniques. Our approach involves generating sentence embeddings, evaluating them using information retrieval (IR) measures and applying clustering algorithms on the best performing sentence embeddings. In the last step, we apply topic modeling using BERTopic followed by the manual labeling of clusters. We also provide the option of automated labeling of these clusters using the idea of semantic similarity. We have applied our approach to a large-sized dataset with around 3000 crowd-generated requirements for smart home applications. We have experimented with both binary and multi-class classification problems, e.g., tertiary, quaternary and quinary classification. Our experimental results demonstrate that this approach can be very useful for the classification of crowd-based software requirements in the absence of labeled data. Additionally, our approach can also be used to analyse and identify labeling related issues in the dataset which may be useful for improving the quality of existing ground truth data.",
+isbn="978-3-031-70245-7"
+}
+```
+
